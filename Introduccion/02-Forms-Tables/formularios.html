@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form action="resultados.html" method="GET">
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        <div>
+          <label for="nombreUsuario">Nombre de usuario</label>
+          <input type="text" id="nombreUsuario" name="nombreUsuario" required />
+        </div>
+        <!-- step sirve para la cantidad que deseamos incrementar en este caso es de 5 en 5 -->
+        <div>
+          <label for="edad">Cual es tu edad</label>
+          <input
+            type="number"
+            id="edad"
+            name="edad"
+            min="0"
+            max="200"
+            step="5"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos personales 2</legend>
+        <div>
+          <label for="email">Cual es tu email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div>
+          <label for="nacimiento">Cual es tu fecha de nacimiento</label>
+          <input type="date" id="nacimiento" name="nacimiento" />
+        </div>
+
+        <div>
+          <label for="comentarios">Comentarios</label>
+          <input name="comentarios" id="comentarios" />
+
+          <input type="checkbox" name="" id="" />
+          <input type="color" name="" id="" />
+
+          <input type="radio" name="" id="" />
+          <input type="search" name="" id="" />
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
